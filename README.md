@@ -1,5 +1,3 @@
-# Organ-Segmentation-UI
-
 ## 需安裝以下環境<br>
 -numpy<br>
 -tqdm<br>
@@ -10,4 +8,6 @@
 -pyqt5<br>
 
 
-執行segmentation_UI.py
+## 執行<br>
+=>執行segmentation_UI.py，就會出現UI介面，如下圖所示，分別選擇病人CT影像資料夾及DicomRT檔案，並且勾選要預測的器官，最後點選Prediction Start 開始預測。
+![UI介面](https://user-images.githubusercontent.com/81366172/112757161-21c4e280-901b-11eb-9efb-21a6197f4d9c.JPG)
