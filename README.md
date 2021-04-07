@@ -8,11 +8,10 @@
 -pyqt5<br>
 
 
-## 執行<br>
+## Run<br>
 =>Download the weights of the 6 organs and put them in the weight folder.<br>
 =>Run segmentation_UI.py, the UI interface will appear, as shown in the figure.<br>
 =>The steps to use the GUI are listed as follows: <br>
-
 Step 1: Click the “Load Data” button and select the CT image folder of 1 patient pre-downloaded from the PACS server.<br>
 Step 2: Click the “Load DicomRT” button and select the patient's DicomRT file.<br>
 Step 3: Check the organ to be predicted (can check multiple organs at once).<br>
