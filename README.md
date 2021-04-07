@@ -1,4 +1,4 @@
-## 需安裝以下環境<br>
+## Install the following environment<br>
 -numpy<br>
 -tqdm<br>
 -pydicom<br>
@@ -9,6 +9,14 @@
 
 
 ## 執行<br>
-=>下載6種器官的權重並放在weight資料夾裡。<br>
-=>執行segmentation_UI.py，就會出現UI介面，如下圖所示，分別選擇病人CT影像資料夾及DicomRT檔案，並且勾選要預測的器官，最後點選Prediction Start 開始預測。<br>
-![UI介面](https://user-images.githubusercontent.com/81366172/112757161-21c4e280-901b-11eb-9efb-21a6197f4d9c.JPG)
+=>Download the weights of the 6 organs and put them in the weight folder.<br>
+=>Run segmentation_UI.py, the UI interface will appear, as shown in the figure.<br>
+=>The steps to use the GUI are listed as follows: <br>
+
+Step 1: Click the “Load Data” button and select the CT image folder of 1 patient pre-downloaded from the PACS server.<br>
+Step 2: Click the “Load DicomRT” button and select the patient's DicomRT file.<br>
+Step 3: Check the organ to be predicted (can check multiple organs at once).<br>
+Step 4: Click “Prediction Start” button to start prediction, and finally a DicomRT file will be generated.<br>
+Step 5: Upload the DicomRT file back to the server, then the contours can be read or refined in the treatment planning system.<br>
+![GUI](https://user-images.githubusercontent.com/81366172/113831011-c08ad500-97b9-11eb-9c4d-42eea230b92f.jpg)
+
