@@ -6,7 +6,7 @@
 -keras==2.2.4<br>
 -tensorflow-gpu==1.13.1<br>
 -pyqt5<br>
-
+-natsort<br>
 
 ## Run<br>
 =>Download the weights of the 6 organs and put them in the weight folder.<br>
