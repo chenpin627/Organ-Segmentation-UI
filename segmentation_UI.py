@@ -174,7 +174,7 @@ class Ui_MainWindow(object):
         self.pushButton_3.setText(_translate("MainWindow", "Prediction Start"))
 
     def printf(self, mes):
-        self.textBrowser.append(mes)  
+        self.textBrowser.append(mes)  # 在指定的区域显示提示信息
         self.cursot = self.textBrowser.textCursor()
         self.textBrowser.moveCursor(self.cursot.End)
         QtWidgets.QApplication.processEvents() 
@@ -190,18 +190,26 @@ class Ui_MainWindow(object):
         
         DCM_Folders = QtWidgets.QFileDialog.getExistingDirectory(None,"選取資料夾","./")  
         
-        self.lineEdit.setText(DCM_Folders)
-        ui.printf('Load_Dicom_Finish') 
-        self.pushButton.setEnabled(False)
-        self.pushButton_2.setEnabled(True)  
+        if DCM_Folders == "":
+            ui.printf('Please select a Dicom folder.') 
+            self.pushButton.setEnabled(True)
+        else:
+            self.lineEdit.setText(DCM_Folders)
+            ui.printf('Load_Dicom_Finish') 
+            self.pushButton.setEnabled(False)
+            self.pushButton_2.setEnabled(True)  
 
 
     def dicomRT_openfile(self): 
         dicomRT_file ,RT_filetype= QtWidgets.QFileDialog.getOpenFileName(None,"選取檔案","./","Files (*.dcm)")
-        self.lineEdit_2.setText(dicomRT_file)
-        ui.printf('Load_DicomRT_Finish')   
-        self.pushButton_2.setEnabled(False)
-        self.pushButton_3.setEnabled(True)  
+        if dicomRT_file == "":
+            ui.printf('Please select a DicomRT.') 
+            self.pushButton_2.setEnabled(True)
+        else:  
+            self.lineEdit_2.setText(dicomRT_file)
+            ui.printf('Load_DicomRT_Finish')   
+            self.pushButton_2.setEnabled(False)
+            self.pushButton_3.setEnabled(True)  
         
         
     def Prediction_Start(self): 
@@ -318,8 +326,10 @@ class Ui_MainWindow(object):
     
         #   特殊格式
         AI_DICOM_RT.file_meta.MediaStorageSOPInstanceUID = DICOM_RT.SOPInstanceUID + date
+        #'1.2.246.352.71.4.753219990087.110632.2017032321550020201013.dcm'
         AI_DICOM_RT.SOPInstanceUID = DICOM_RT.SOPInstanceUID + date
         AI_DICOM_RT.file_meta.ImplementationClassUID = '1.3.6.1.4.1.9590.100.1.3.100.9.4'
+        # pydicom.dataset.validate_file_meta(AI_DICOM_RT.file_meta)
 
         pydicom.filewriter.dcmwrite(save_path, AI_DICOM_RT, write_like_original=True)
 
