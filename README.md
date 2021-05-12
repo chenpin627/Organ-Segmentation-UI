@@ -9,8 +9,10 @@
 -natsort<br>
 
 ## Run<br>
+=>Download segmentation_UI.exe in the URL.<br>
+  https://drive.google.com/drive/folders/1bJewOG-J0XeEbx_axwNmowrQGqhiOBBQ?usp=sharing <br>
 =>Download the weights of the 6 organs and put them in the weight folder.<br>
-=>Run segmentation_UI.py, the UI interface will appear, as shown in the figure.<br>
+=>Run segmentation_UI.exe, the UI interface will appear, as shown in the figure.<br>
 =>The steps to use the GUI are listed as follows: <br>
 Step 1: Click the “Load Data” button and select the CT image folder of 1 patient pre-downloaded from the PACS server.<br>
 Step 2: Click the “Load DicomRT” button and select the patient's DicomRT file.<br>
