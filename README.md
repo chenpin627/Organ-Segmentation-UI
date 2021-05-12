@@ -1,13 +1,3 @@
-## Install the following environment<br>
--numpy<br>
--tqdm<br>
--pydicom<br>
--opencv-python==3.4.3.18<br>
--keras==2.2.4<br>
--tensorflow-gpu==1.13.1<br>
--pyqt5<br>
--natsort<br>
-
 ## Run<br>
 =>Download segmentation_UI.exe in the URL.<br>
   https://drive.google.com/drive/folders/1bJewOG-J0XeEbx_axwNmowrQGqhiOBBQ?usp=sharing <br>
