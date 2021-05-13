@@ -1,6 +1,6 @@
 ## Run<br>
 =>Download segmentation_UI.exe in the URL.<br>
-  https://drive.google.com/drive/folders/1bJewOG-J0XeEbx_axwNmowrQGqhiOBBQ?usp=sharing <br>
+  https://drive.google.com/file/d/1QXz6S7hDmYgBu6imIXlQ7ppC9NabHhTs/view?usp=sharing<br>
 =>Download the weights of the 6 organs and put them in the weight folder.<br>
 =>Run segmentation_UI.exe, the UI interface will appear, as shown in the figure.<br>
 =>The steps to use the GUI are listed as follows: <br>
