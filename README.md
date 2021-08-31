@@ -2,7 +2,7 @@
 =>GPU memory needs more than 5G.
 ## Run<br>
 =>Download organ_segmentation_GUI.exe in the URL.<br>
-  https://drive.google.com/file/d/1QXz6S7hDmYgBu6imIXlQ7ppC9NabHhTs/view?usp=sharing<br>
+  https://drive.google.com/file/d/1Q-hZDJi0HEB4odlmvS9iS86TWFp0nIGB/view?usp=sharing<br>
 =>Download the model of the 6 organs and put them in the Model folder.<br>
 =>Run organ_segmentation_GUI.exe, the UI interface will appear, as shown in the figure.<br>
 =>The steps to use the GUI are listed as follows: <br>
