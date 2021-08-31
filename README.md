@@ -10,5 +10,5 @@ Step 1: Click the “Load Data” button and select the CT image folder of 1 pat
 Step 2: Check the organ to be predicted (can check multiple organs at once or check "Select All" to select all organs).<br>
 Step 3: Click “Prediction Start” button to start prediction, and finally a DicomRT file will be generated.<br>
 Step 4: Upload the DicomRT file back to the server, then the contours can be read or refined in the treatment planning system.<br>
-![GUI](![GUI](https://user-images.githubusercontent.com/81366172/131432015-26a95c4b-3d7e-4831-b437-3f2fae5a700e.PNG)
+(![GUI](https://user-images.githubusercontent.com/81366172/131432015-26a95c4b-3d7e-4831-b437-3f2fae5a700e.PNG)
 
